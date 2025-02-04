@@ -43,19 +43,25 @@ h4{
 p{
   color: #737373;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.75;
   margin-top: 0rem;
 }
 
 li{
     color: #737373;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.75;
 }
 
 .my-logo{
-  color: #000000;
+  color: #000;
   font-weight: 700;
+  line-height: 1.75;
+}
+
+a{
+  color: #000;
+  cursor: pointer;
 }
 
 /* Header
@@ -69,12 +75,6 @@ header{
   margin-bottom: 1rem;
 }
 
-header a {
-  display: inline-block;
-  padding: 1rem;
-  text-decoration: none;
-}
-
 header nav ul{
   margin: 0rem;
   padding: 0rem;
@@ -82,6 +82,22 @@ header nav ul{
 
 header nav ul li{
   list-style: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+header a, 
+header nav ul li a {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #737373;
+    cursor: pointer;
+}
+
+header a:hover,
+header nav ul li a:hover {
+    color: #000;
 }
 
 /* Main
@@ -116,9 +132,9 @@ main{
 
 .project-card {
     background-color: #fff;
-    border: 1px solid #fff;
+    border: 2px solid #ebeae7;
     border-radius: 0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    box-shadow: none;
     display: flex;
     gap: 2rem;
     max-width: fit-content;
@@ -127,6 +143,11 @@ main{
     flex-direction: row;
     text-decoration: none;
     color: inherit;
+    transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) -5px -2px 25px -5px, rgba(0, 0, 0, 0.1) 5px 10px 10px -5px;
 }
 
 .project-card-image {
