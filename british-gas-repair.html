@@ -42,7 +42,10 @@
                 <h3>Research</h3>
                 <h4>Analytics and journey mapping</h4>
                 <p>Using Adobe Analytics, I got the analytics for both journeys. The biggest drop off point in both was at the first step where users had to select what their problem was. Before investigating this any further, I produced journey maps so that everyone had a single document we could refer to and have discussions around.</p>
-                <!--IMAGE PLACEHOLDER: Journey performance-->
+                <div class="image-card">
+                    <img src="resources/images/british-gas-repair/Journey+before.jpg" alt="Initial journey performance" class="image-card-image modal-trigger">
+                </div>
+                <p class="caption">Initial journey performance</p>
                 <h4>Understanding the business process</h4>
                 <p>I asked stakeholders who were responsible for coordinating engineer appointments to help me understand what information they needed in order for them to be able to prioritise appointments and provide enough information to repair engineers. I also interviewed call centre agents to learn more about customer pain points and how we could improve the wording of our questions.</p>
                 <p>I found that we could reduce the amount of questions we ask users by 26% and still provide enough information to the engineer co-ordination team.</p>
@@ -58,10 +61,21 @@
                 <h4>Sketching</h4>
                 <p>Based on everything I learnt, I started sketching out various ideas and iterating until I landed on one that I was happy with.</p>
                 <p>Keeping the usability testing findings in mind, I made sure I kept copy short and concise due distressed state of the user. I made sure that users would be clear as to what would happen on the day and what they'd need to do if they needed to amend their appointment. Producing sketches allowed stakeholders to understand the overall experience whilst not getting bogged down by the finer details.</p>
-                <!--IMAGE PLACEHOLDER: Some initial sketches-->
+                <div class="image-card">
+                    <img src="resources/images/british-gas-repair/Sketches.jpg" alt="Ideation sketches" class="image-card-image modal-trigger">
+                </div>
+                <p class="caption">Ideation sketches</p>
                 <h4>Card sorting</h4>
                 <p>Seeing as the problem selection step was one of our biggest identified issues, I wanted to know how users grouped problems. Using Xsort, I conducted closed card sorting sessions to help me do this. I tested the existing structure (which grouped problems by product) against a proposed structure which grouped problems by type. I came up with the proposed variant after listening to user feedback during testing.</p>
                 <p>The results for the existing grouping structure highlighted the issues we saw during user testing with around a quarter of the cards being placed in two or more groups. The results for the proposed structure was far better, we saw a 65% reduction in the amount of problems being placed in two or more groups.</p>
+                <div class="image-card"></div>
+                    <img src="resources/images/british-gas-repair/Old.jpg" alt="Existing structure results" class="image-card-image modal-trigger">
+                </div>
+                <p class="caption">Existing structure results</p>
+                <div class="image-card"></div>
+                    <img src="resources/images/british-gas-repair/New.jpg" alt="New structure results" class="image-card-image modal-trigger">
+                </div>
+                <p class="caption">New structure results</p>
                 <h4>Usability testing</h4>
                 <p>Using Axure, I created a high fidelity prototype that featured the new grouping structure and a few other changes to the journey. The changes had a great impact on the journey, selecting a fault was clearly a lot easier than before and the rest of the journey was completed with ease.</p>
                 <h4>Final designs</h4>
@@ -73,9 +87,21 @@
                 <p>So we could gather learnings as soon as possible, we started off by releasing a journey that could only be used by users with entry level products. We then incrementally built the journey to handle the more comprehensive cover products until the vast majority of users could use it. Between every release I was monitoring analytics and user feedback. I picked up any negative learnings and quickly made enhancements that would go live soon after.</p>
                 <h4>Outcomes</h4>
                 <p>We saw a 4% increase in journey conversion compared to the previous journey. This resulted in a £15k reduction in annual call centre costs. We also saw a massive 140% improvement in the customer satisfaction scores given by users who used the journey, moving it from a negative score to a positive one. After looking at the user feedback it was clear that users appreciated how quickly they could find their problem and book an appointment. Negative feedback around the amount of copy had also stopped which was great to see.</p>
-                <!--IMAGE PLACEHOLDER: Journey performance after implementing changes-->
-                <!--IMAGE PLACEHOLDER: UI design-->
+                <div class="image-card">
+                    <img src="resources/images/british-gas-repair/Journey+After.jpg" alt="New journey performance" class="image-card-image modal-trigger">
+                </div>
+                <p class="caption">New journey performance</p>
+                <div class="image-card">
+                    <img src="resources/images/british-gas-repair/UI.jpg" alt="Final designs" class="image-card-image modal-trigger">
+                </div>
+                <p class="caption">Final designs</p>
             </section>
         </main>
+        <!-- Modal Structure -->
+        <div class="modal" id="modal">
+            <span class="close" id="closeModal">&times;</span>
+            <img class="modal-content" id="modalImage" alt="Modal Image">
+        </div>
+        <script src="resources/js/modal.js"></script>
     </body>
 </html> 

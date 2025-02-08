@@ -62,6 +62,7 @@ p{
 }
 
 .caption{
+  font-size: 0.75rem;
   font-style: italic;
   margin-top: 0.5rem;
   text-align: center;
