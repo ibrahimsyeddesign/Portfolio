@@ -16,7 +16,7 @@ body {
  ========================================================================== */
 
 html{
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Inter", Helvetica, sans-serif;
   background-color: #FAF9F6;
 }
@@ -61,16 +61,32 @@ p{
   margin-top: 0rem;
 }
 
+.caption{
+  font-style: italic;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
 li{
     color: #737373;
     font-weight: 400;
     line-height: 1.75;
 }
 
-.my-logo{
+.my-logo {
+  display: inline-block; /* Ensure the logo is treated as a block for positioning */
   color: #000;
   font-weight: 700;
   line-height: 1.75;
+  padding: 1rem;
+}
+
+.full-logo {
+  display: inline; /* Show the full logo by default */
+}
+
+.short-logo {
+  display: none; /* Hide the short logo by default */
 }
 
 a{
@@ -201,14 +217,68 @@ hr{
   margin: 2rem 0;
 }
 
- /* Forms
+ /* Image cards
  ========================================================================== */
 
+ .image-card {
+  background-color: #fff;
+  border: 2px solid #ebeae7;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-height: 40rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-card-image {
+  width: 100%;
+  height: auto;
+  display:block;
+}
+
+ /* Modal
+ ========================================================================== */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+  overflow: auto; /* Enable scroll if needed */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%; /* Limit the width of the image */
+  max-height: none; /* No limit the height of the image */
+  width: auto; /* Allow width to adjust based on aspect ratio */
+  height: auto; /* Allow height to adjust based on aspect ratio */
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: block;
+  line-height: 0.6;
+}
 
 /* Media query for landing page on smaller devices
  ========================================================================== */
 
-@media (max-width: 589px) {
+@media (max-width: 678px) {
   
     .project-card {
       flex-direction: column;
@@ -247,14 +317,26 @@ hr{
 /* Media query for nav items on smaller screens
  ========================================================================== */
 
-@media (max-width: 369px) {
-  header a {
-    padding: 0.5rem;
+@media (max-width: 415px) {
+  .full-logo {
+    display: none; /* Hide the full logo on smaller screens */
+}
+
+.short-logo {
+    display: inline; /* Show the short logo on smaller screens */
+}
+
+  @media (max-width: 362px) {
+    header a, 
+    header nav ul li a {
+        padding: 0.5rem;
+    }
   }
-  
-  @media (max-width: 321px) {
-    header a {
-      padding: 0.25rem;
+
+  @media (max-width: 326px) {
+    header a, 
+    header nav ul li a {
+        padding: 0.25rem;
     }
   }
 }

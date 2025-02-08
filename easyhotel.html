@@ -13,7 +13,10 @@
     </head>
     <body>
         <header>
-            <a href="index.html" class="my-logo">IBRAHIM SYED</a>
+            <a href="index.html" class="my-logo">
+                <span class="full-logo">IBRAHIM SYED</span>
+                <span class="short-logo">IBRAHIM</span>
+            </a>
             <nav>
                 <ul>
                     <li><a href="index.html">Portfolio</a></li>
@@ -47,7 +50,10 @@
                     </ul>
                 <p>I also ran studies on a variety competitor websites. This was useful as I could quickly see how alternative approaches worked with users, providing valuable insights for when I started creating designs.</p>
                 <p>It’s worth noting that findings were shared with stakeholders and the areas of improvement were agreed upon. This helped later on in the process when getting sign-off for updated designs as the rationale behind key changes were clearly understood.</p>
-                <!--IMAGE PLACEHOLDER-->
+                <div class="image-card">
+                    <img src="resources/images/easyhotel/easyHotelReportExcerpt.jpeg" alt="usability testing report" class="image-card-image modal-trigger">
+                </div>
+                <p class="caption">Excerpt of the usability study report</p>
             </section>
             <section class="casestudy-section">
                 <h3>Ideation</h3>
@@ -60,7 +66,11 @@
                     <li>Fed-back technical errors to the development team to investigate and fix.</li>
                     <li>More obvious tweaks such as implementing clearer and more consistent labelling and component behaviour across the easyHotel domain.</li>
                 </ul>
-                <!--IMAGE PLACEHOLDER-->
+                <div class="image-card">
+                    <img src="resources/images/easyhotel/HotelDescription_Desktop.jpg" alt="usability testing report" class="image-card-image modal-trigger">
+                </div>
+                <p class="caption">Updated hotel description page design</p>
+                <br><br>
                 <h4>Usability testing</h4>
                 <p>I created basic prototypes using Invision and then ran usability tests to see if my changes had made an impact. The new designs performed really well and addressed the key issues identified during the previous study. Users were able to make informed decision on the hotels they viewed and they were a lot more clear on what they were purchasing and what their costs were.</p>
                 <p>There were also a couple of improvement areas identified during this study which I was able to quickly take action on to further refine the experience.</p>
@@ -71,6 +81,13 @@
                 <p>The product team gradually released the designs changes during sprints and, once the bulk of the key changes had gone live, they saw a 33% increase in conversion rate (average across web and app) and a 6% reduction in checkout abandonments.</p>
                 <p>It’s worth noting that, due to the limited amount of time I had allocated to this project, I wasn’t able to review developments before they were released. If I had more time I’d certainly allocate it to this area. I believe that this lack of communication resulted in a higher amount of design bugs being released which I assume resulted in the changes not reaching their full potential.</p>
             </section>
+            <!-- Modal Structure -->
+            <div class="modal" id="modal">
+                <span class="close" id="closeModal">&times;</span>
+                <img class="modal-content" id="modalImage" alt="Modal Image">
+            </div>
+            <script src="resources/js/modal.js"></script>
+            </body>
         </main>
     </body>
 </html>
